@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+   height: 100vh;
+   width: 100vw;
+   background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg');
+   background-position: bottom;
+   background-size: cover;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+}
+.navbar h1{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.header-content a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(195, 32, 113);
+    padding: 15px;
+    border-radius:25px;
+  
+  
+}
+
+
+
+.header-content{
+    margin-bottom: 200px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.header-content h1{
+    font-size: 10vmin;
+    margin-top: 10px;
+    margin-bottom: 50px;
+   
+}
+
+.line{
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 5px;
+    background-color: rgb(195, 32, 113);
+   
+}
+.navbar{
+    position: absolute;
+    top:0;
+    bottom:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 10px;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+   
+}
+.navlinks li{
+    margin: 0 15px;
+   
+}
+#Active{
+  background-color: rgb(237, 12, 124);
+}
+.navlinks a:hover{
+  background-color: rgb(237, 12, 124);
+}
+
+.navbar a{
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #a28997;
+  padding: 13px;
+  border-radius:25px;
+}
+.btn{
+   display: none;
+}
+.box{
+    height: 200px;
+    width:40%;
+  
+    float: left;
+    margin: 5%;
+   
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    box-shadow: 2px 2px 5px rgba(250, 1, 101, 0.382); 
+    border-radius: 10px;
+  
+}
+.box:hover{
+  border: 1px solid rgb(245, 7, 229);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.384);
+  
+
+}
+
+.box-container1::after,.box-container2::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.dropdown {display: none;}
+.box-container1 .img{
+    height: 180px;
+    width: 200px;
+   
+   
+}
+.box-container2 .img{
+    height: 180px;
+    width: 200px;
+    
+    
+
+}
+.c1{
+    float: left;
+    margin: 5px;
+  
+}
+.card4 {
+    height: 200px;
+    width: 200px;
+ 
+}
+.c1 a{
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(195, 32, 113);
+  padding: 10px;
+  border-radius:25px;
+ 
+ 
+}
+.Card-visit{
+  margin: 40px 0 0 60px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ 
+ 
+  background-color:#a28997;
+ 
+ 
+}
+
+#fdiv1 p:hover,#fdiv1 h1:hover,#fdiv2 .iandp:hover,#fdiv2 h1:hover{
+  cursor: pointer; 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  box-shadow: 2px 2px 7px rgb(11, 11, 11); 
+    border-radius: 10px;
+   color: rgb(237, 12, 124);
+    
+}
+.footer h3{
+  font-size: 4vmin;
+}
+.box1 h1,.box2 h1,.box3 h1,.box4 h1{
+  color: #1e3fe7;
+}
+.head{
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(100,end) forwards;
+}
+#fdiv1{
+  float: left;
+ 
+  margin-left: 15%;
+  height: 35vmin;
+  line-height: 45px;
+  text-align: center;
+  padding: 10px;
+  width: 35vmin;
+ 
+}
+#fdiv1 h1,#fdiv1 h4,#fdiv2 h1{
+  font-size:4vmin;
+  
+  
+}
+
+#fdiv2{
+  float: right;
+  margin-top: 10px;
+  margin-right: 15%;
+  
+  text-align: center;
+  height: 50vmin;
+  
+  width: 35vmin;
+ 
+}
+
+
+#fdiv2 div{
+  margin-left: 30px;
+  display:grid;
+  margin-top: 10px;
+}
+#fdiv1 p,#fdiv2 p{
+  font-size: 3vmin;
+  
+}
+@keyframes typing {
+  0%{width: 0;}
+  50%{width: 200px;}
+  100%{width: 100%;}
+  
+}
+@media only screen and (max-width:769px)
+{
+    .navlinks{
+        display: none;
+    }
+    .btn{
+        visibility: visible;
+    }
+    
+    .dropbtn {
+
+      background-color: rgb(195, 32, 113);
+      margin:10px;
+      padding: 10px;
+      border-radius:20px;
+    color: white;
+  
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+        }
+          
+          .dropdown {
+            position: absolute;
+            display: inline-block;
+            right: 0;
+        top:0;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #a28997;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            border-radius: 8px;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .dropdown:hover .dropbtn {
+            background-color: #dbb4d9;
+          }
+          .box{
+            width: 100%;
+            margin-left: 0;
+            border: none;
+          }
+
+         
+       
+          
+}
+@media only screen and (max-width:426px)
+{
+ 
+  .box{
+  border: none;
+  }
+    
+    .box-container1 .img{
+        height: 0;
+        width: 0;
+    
+    }
+    .box-container2 .img{
+        height: 0;
+        width: 0;
+    
+    }
+    .box{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        background-image: url('https://i.pinimg.com/564x/b8/f8/fa/b8f8fa8d2eaa6518253f301eadac06b0.jpg');
+       
+    
+      }
+      .box1{
+        background-image:url('https://hips.hearstapps.com/hmg-prod/images/barcelona-at-sunrise-viewed-from-park-guell-royalty-free-image-1675790147.jpg?crop=0.448xw:1.00xh;0.0554xw,0&resize=980:*') ;
+        background-size: cover;
+        
+      }
+      .box1 h1{
+        color: #1e3fe7;
+      }
+      .box2{
+        background-image: url('https://hips.hearstapps.com/hmg-prod/images/three-musketeers-falls-at-iguazu-falls-and-the-royalty-free-image-1570212537.jpg?crop=0.447xw:1.00xh;0.381xw,0&resize=980:*');
+        width: 100vw;
+        background-size: cover;
+        
+      }
+      .box3{
+        background-image: url('https://hips.hearstapps.com/hmg-prod/images/hawa-mahal-jaipur-india-royalty-free-image-1570211493.jpg?crop=1xw:1xh;center,top&resize=980:*');
+        background-size: cover;
+        
+      }
+      .box4{
+        background-image: url('https://www.adventureinyou.com/wp-content/uploads/2016/12/sunrisebagan.jpg');
+        background-size: cover;
+        background-position: bottom;
+      
+      }
+      .footer i{
+        margin: 5px;
+      }
+      .box4 h1{
+        color: #1eef02;
+      }
+      .box3 h1,.box4 h1{
+        color: whitesmoke;
+      }
+      .box3 h1{
+        color: white;
+      }
+      #fdiv1,#fdiv2{
+        margin: 0;
+      }
+      footer{
+        height: 50vh;
+      }
+}
+
+
